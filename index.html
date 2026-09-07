@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Areeba Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <section class="calculator">
+
+            <div class="top-bar">
+                <div>
+                    <span class="status-dot"></span>
+                    <span>Areeba Calc</span>
+                </div>
+                <span class="mode">PRO</span>
+            </div>
+
+            <div class="display-area">
+
+                <div class="expression" id="expression">Ready</div>
+
+                <div class="preview" id="preview"></div>
+
+                <div class="result" id="result">0</div>
+
+            </div>
+
+            <div class="keypad">
+
+                <button class="utility" data-action="clear">AC</button>
+                <button class="utility" data-action="sign">±</button>
+                <button class="utility" data-action="percent">%</button>
+                <button class="operator" data-value="/">÷</button>
+
+                <button data-value="7">7</button>
+                <button data-value="8">8</button>
+                <button data-value="9">9</button>
+                <button class="operator" data-value="*">×</button>
+
+                <button data-value="4">4</button>
+                <button data-value="5">5</button>
+                <button data-value="6">6</button>
+                <button class="operator" data-value="-">−</button>
+
+                <button data-value="1">1</button>
+                <button data-value="2">2</button>
+                <button data-value="3">3</button>
+                <button class="operator" data-value="+">+</button>
+
+                <button class="zero" data-value="0">0</button>
+                <button data-value=".">.</button>
+                <button class="backspace" data-action="backspace">⌫</button>
+                <button class="equals" data-action="calculate">=</button>
+
+            </div>
+
+            <div class="keyboard-tip">
+                <span>⌨</span>
+                Keyboard enabled
+            </div>
+
+        </section>
+
+        <aside class="history-panel">
+
+            <div class="history-header">
+                <div>
+                    <span class="small-label">ACTIVITY</span>
+                    <h2>History</h2>
+                </div>
+
+                <button id="clearHistory">Clear</button>
+            </div>
+
+            <div id="historyList" class="history-list">
+
+                <div class="empty-history">
+                    <div class="history-icon">◌</div>
+                    <p>No calculations yet</p>
+                    <span>Your results will appear here</span>
+                </div>
+
+            </div>
+
+            <div class="history-footer">
+                <span>Areeba Calculator</span>
+                <span>v1.0</span>
+            </div>
+
+        </aside>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
